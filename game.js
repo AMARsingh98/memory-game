@@ -140,13 +140,13 @@ function resetGame() {
 }
 function shareScore() {
     const name = playerNameInput.value.trim();
-    const message = `🎮 I just completed the Memory Match game in ${moves} moves and ${timeElapsed} seconds! Can you beat me?\nPlay here: [your-game-link]`;
+    const message = `🎮 I just completed the Memory Match game in ${moves} moves and ${timeElapsed} seconds! Can you beat me?\nPlay here: https://amarsingh98.github.io/memory-game/`;
     const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   }
   
   function shareOnTwitter() {
-    const message = `🎯 I finished the Memory Match game in ${moves} moves and ${timeElapsed}s! Try to beat me!\nPlay here: [your-game-link]`;
+    const message = `🎯 I finished the Memory Match game in ${moves} moves and ${timeElapsed}s! Try to beat me!\nPlay here: https://amarsingh98.github.io/memory-game/`;
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   }
